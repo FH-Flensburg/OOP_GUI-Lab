@@ -23,7 +23,7 @@ public class Windows
 		{
 			windows[i] = new JFrame("Fenster" + (i + 1));
 			windows[i].setSize(100 * (i + 2), 100 * (i + 2));
-			windows[i].add(new JLabel("Moin");
+			windows[i].add(new JLabel("Moin"));
 			windows[i].setLocationRelativeTo(null);
 			windows[i].setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			windows[i].setVisible(true);
