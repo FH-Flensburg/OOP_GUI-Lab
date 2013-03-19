@@ -13,17 +13,17 @@ import javax.swing.*;
  */
 public class Windows
 {
+	private static final int windowCount = 7;
+	
 	public static void main (String [] args)
-	{
-		JFrame[] windows = new JFrame[7]; //ganz ganz schlimm! Magic Number!
-		JLabel[] label = new JLabel[7];
+	{	
+		JFrame[] windows = new JFrame[windowCount];
 
 		for (int i = windows.length-1; i >= 0; i--)
 		{
-			label[i] = new JLabel("Moin");
 			windows[i] = new JFrame("Fenster" + (i + 1));
 			windows[i].setSize(100 * (i + 2), 100 * (i + 2));
-			windows[i].add(label[i]);
+			windows[i].add(new JLabel("Moin");
 			windows[i].setLocationRelativeTo(null);
 			windows[i].setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			windows[i].setVisible(true);
