@@ -15,7 +15,7 @@ public class Windows
 {
 	public static void main (String [] args)
 	{
-		JFrame[] windows = new JFrame[7];
+		JFrame[] windows = new JFrame[7]; //ganz ganz schlimm! Magic Number!
 		JLabel[] label = new JLabel[7];
 
 		for (int i = windows.length-1; i >= 0; i--)
